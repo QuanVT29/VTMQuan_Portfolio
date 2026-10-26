@@ -37,7 +37,7 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 
 * **Education:** Bachelor of Information Assurance, FPT University (Da Nang) | **GPA: 3.5 / 4.0** (Expected: Jan 2028)
 * **Language Proficiency:** English — Full Professional Proficiency (**IELTS 7.0 level**)
-* **Core Competencies:** Multi-Cloud Infrastructure (AWS & Azure), Infrastructure as Code (Terraform), DevSecOps CI/CD Pipelines, Container Security, Linux Administration, and ITSM Runbook Automation.
+* **Core Competencies:** Multi-Cloud Infrastructure (AWS & Azure), Infrastructure as Code (Terraform), Kubernetes & Container Security (AKS/EKS), Full-Stack Observability & KQL Log Analytics, Linux System Hardening, and ITSM Runbook Automation (ServiceNow/Logic Apps).
 
 ### Verified Credentials & Certifications
 
