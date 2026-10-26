@@ -74,8 +74,13 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 * **Stack**: Amazon EKS, Terraform, Helm, Docker, GitHub Actions, Trivy, Checkov.
 
 #### [`aws-enterprise-3tier-platform`](https://github.com/votaquann/aws-enterprise-3tier-platform)
-* **What it does**: An enterprise-grade, highly available 3-tier web architecture across multiple Availability Zones on AWS. The design features a public-facing Application Load Balancer, an auto-scaling compute tier hosted in private subnets, and an isolated database tier running Amazon RDS PostgreSQL with automated failover. The entire infrastructure is 100% codified via modular, reusable Terraform scripts following AWS Well-Architected Framework principles.
-* **Stack**: AWS VPC, EC2 Auto Scaling, ALB, RDS PostgreSQL, Terraform Modules, CloudWatch.
+* **What it does**:
+
+An enterprise-grade, highly resilient 3-tier AWS platform codified 100% via modular Terraform. It features ARM64 Graviton EC2 Auto Scaling, an Amazon RDS Multi-AZ PostgreSQL cluster, and an automated Multi-Region Active-Passive Disaster Recovery setup in Sydney (ap-southeast-2) via Route 53 DNS Failover (Verified RTO: 5m 22s, RPO < 15s). The platform embeds shift-left DevSecOps (GitHub Actions via IAM OIDC, Checkov, Trivy), zero-downtime CodeDeploy rollouts, full-stack CloudWatch/Canary observability, and defense-in-depth security (AWS WAF v2, KMS CMK envelope encryption, Secrets Manager auto-rotation) adhering to CIS AWS Benchmark standards.
+
+* **Stack**:
+
+AWS (VPC, EC2 Graviton, ALB, RDS Multi-AZ, Route 53, WAF v2, KMS, Secrets Manager, CloudWatch, Synthetics, CodeDeploy), Terraform, GitHub Actions (OIDC), Checkov, Trivy, Bash, PostgreSQL.
 
 #### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf)
 
