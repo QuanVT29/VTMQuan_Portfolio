@@ -10,7 +10,7 @@
 [![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
 [![ITSM Integration](https://img.shields.io/badge/ITSM-ServiceNow_Automation-81B5A1?style=for-the-badge&logo=servicenow&logoColor=white)](https://www.servicenow.com/)
 
-[Curriculum Vitae (PDF)](./01-credentials/docs/CV_VoTaMinhQuan_CloudOps.pdf) • [Credly Certification Badge](https://www.credly.com/earner/earned/badge/1db6d09f-23c5-4364-99d0-10f5469515f9) • [GitHub Repositories](https://github.com/QuanVT29)
+[Curriculum Vitae (PDF)](./01-credentials/docs/CV_VoTaMinhQuan_CloudOps.pdf) • [Credly Certification Badge](https://www.credly.com/badges/1db6d09f-23c5-4364-99d0-10f5469515f9/public_url) • [GitHub Repositories](https://github.com/QuanVT29)
 
 </div>
 
@@ -43,7 +43,7 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 
 | Credential / Certification | Issuing Organization | Scope / Verification |
 | :--- | :--- | :--- |
-| **AWS Certified Solutions Architect – Associate (SAA-C03)** | Amazon Web Services | [Verify via Credly ↗](https://www.credly.com/earner/earned/badge/1db6d09f-23c5-4364-99d0-10f5469515f9) |
+| **AWS Certified Solutions Architect – Associate (SAA-C03)** | Amazon Web Services | [Verify via Credly ↗](https://www.credly.com/badges/1db6d09f-23c5-4364-99d0-10f5469515f9/public_url) |
 | **Foundations of Cybersecurity** | Google | Information Security Principles, Threat Assessment |
 | **Introduction to Networks** | Cisco Networking Academy | Routing, VLANs, Subnetting, TCP/IP Layer Diagnostics |
 | **GenAI in Cloud** | FPT University | Cloud AI Integration & Productivity Automation |
