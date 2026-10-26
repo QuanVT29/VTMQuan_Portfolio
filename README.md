@@ -46,7 +46,7 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 | **AWS Certified Solutions Architect – Associate (SAA-C03)** | Amazon Web Services | [Verify via Credly ↗](https://www.credly.com/) |
 | **Foundations of Cybersecurity** | Google | Information Security Principles, Threat Assessment |
 | **Introduction to Networks** | Cisco Networking Academy | Routing, VLANs, Subnetting, TCP/IP Layer Diagnostics |
-| **GenAI in Cloud** | FPT Software | Cloud AI Integration & Productivity Automation |
+| **GenAI in Cloud** | FPT University | Cloud AI Integration & Productivity Automation |
 | **Microsoft Azure (AZ-900 & AZ-104 Focus Track)** | Microsoft Learning | RBAC, VNet/NSG, AKS Operations, Log Analytics & KQL |
 
 ---
