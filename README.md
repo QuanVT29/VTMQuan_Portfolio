@@ -77,7 +77,7 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 * **What it does**: An enterprise-grade, highly available 3-tier web architecture across multiple Availability Zones on AWS. The design features a public-facing Application Load Balancer, an auto-scaling compute tier hosted in private subnets, and an isolated database tier running Amazon RDS PostgreSQL with automated failover. The entire infrastructure is 100% codified via modular, reusable Terraform scripts following AWS Well-Architected Framework principles.
 * **Stack**: AWS VPC, EC2 Auto Scaling, ALB, RDS PostgreSQL, Terraform Modules, CloudWatch.
 
-#### [`Enterprise Database & VM Migration to AWS (Labs Report)`]()
+#### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf)
 * **What it does**: Technical execution and reporting of two enterprise migration labs performed during internship tenure:
   1. *VMware vSphere VM to AWS EC2*: Virtual disk image preparation, driver injection, volume conversion, and networking realignment.
   2. *Heterogeneous Database Migration*: Full-cycle migration of an on-premises relational database (Dockerized Oracle/MySQL) to Amazon RDS PostgreSQL using AWS SCT for schema translation and AWS DMS for initial data load and continuous replication (CDC) with zero data loss.
