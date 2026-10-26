@@ -2,7 +2,7 @@
 
 # Multi-Cloud Engineering & Operations Portfolio
 
-**Production Architectures, DevSecOps Automation, and Day-2 Azure Cloud Operations**
+**Production Architectures, DevSecOps Automation, and Azure Cloud Operations**
 
 [![AWS SAA-C03](https://img.shields.io/badge/AWS-Certified_Solutions_Architect_Associate-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://www.credly.com/)
 [![Azure Operations](https://img.shields.io/badge/Azure-Cloud_Operations_Engineer-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
