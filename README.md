@@ -24,7 +24,7 @@
 3. [Microsoft Azure & Cloud Operations ](#3-microsoft-azure--cloud-operations-day-2-ops)
    - [Core Architectural & Operational Knowledge](#31-azure-core-pillars--cloud-ops-competencies)
    - [Flagship Project: Cloud-Native Observability & Auto-Remediation System](#32-flagship-project-cloud-native-observability--auto-remediation-system)
-   - [Technical Runbooks & Lab Reports](#33-technical-runbooks--lab-reports)
+   - [Technical Runbooks & Documentation](#33-technical-runbooks-&-documentation)
 
 ---
 
