@@ -79,7 +79,7 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 
 #### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf)
 
-* **- Technical execution and reporting of end-to-end enterprise workload and database migration labs:** 
+* **Technical execution and reporting of end-to-end enterprise workload and database migration labs:** 
 
 i. Lift-and-Shift Server Migration (Rehost): Executed block-level, continuous data replication of an on-premises Linux VM (VMware) to AWS EC2 using AWS Application Migration Service (AWS MGN), ensuring near-zero downtime cutover and automated driver/hypervisor conversion.
 
