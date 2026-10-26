@@ -90,6 +90,7 @@ iii. Heterogeneous Database Migration: Migrated an on-premises commercial RDBMS 
 Deliverable: Comprehensive migration runbooks, SCT database assessment reports, cutover checklist, and post-migration data integrity verification reports via CLI/psql.
 
 #### [`gitops-k8s-local-observability`](aws_labs/gitops_project/Project GitOps.pdf)
+
 * **What it does**: A localized Kubernetes platform implementing declarative GitOps synchronization and the Golden Signals observability stack. Workloads are monitored using Prometheus and visualized via custom Grafana dashboards, with Alertmanager routing threshold-based notifications for high CPU/RAM utilization and service degradation.
 * **Stack**: Kubernetes, GitOps Engine, Helm, Prometheus, Grafana, Alertmanager.
 
