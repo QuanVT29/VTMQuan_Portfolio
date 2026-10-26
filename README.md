@@ -69,12 +69,12 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 
 ### 2.2. Production Projects & Migration Labs
 
-#### [`aws-eks-devsecops-todo-app`](https://github.com/votaquann/aws-eks-devsecops-todo-app)
+#### [`aws-eks-devsecops-todo-app`](https://github.com/QuanVT29/aws-eks-devsecops-todo-app.git)
 * **What it does**: A production-grade DevSecOps pipeline deploying a containerized microservice onto a managed Amazon EKS cluster. The platform integrates shift-left security directly into GitHub Actions, automatically halting builds upon detecting High/Critical vulnerabilities via Trivy (container scans) or Checkov (Terraform static code analysis). Deployment is managed via custom Helm charts ensuring rolling updates, zero downtime, and zero plain-text secrets in the repository.
 * **Stack**: Amazon EKS, Terraform, Helm, Docker, GitHub Actions, Trivy, Checkov.
 <br>
 
-#### [`aws-enterprise-3tier-platform`](https://github.com/votaquann/aws-enterprise-3tier-platform)
+#### [`aws-enterprise-3tier-platform`](https://github.com/QuanVT29/aws-enterprise-3tier-platform.git)
 * **What it does**:
 
 An enterprise-grade, highly resilient 3-tier AWS platform codified 100% via modular Terraform. It features ARM64 Graviton EC2 Auto Scaling, an Amazon RDS Multi-AZ PostgreSQL cluster, and an automated Multi-Region Active-Passive Disaster Recovery setup in Sydney (ap-southeast-2) via Route 53 DNS Failover (Verified RTO: 5m 22s, RPO < 15s). The platform embeds shift-left DevSecOps (GitHub Actions via IAM OIDC, Checkov, Trivy), zero-downtime CodeDeploy rollouts, full-stack CloudWatch/Canary observability, and defense-in-depth security (AWS WAF v2, KMS CMK envelope encryption, Secrets Manager auto-rotation) adhering to CIS AWS Benchmark standards.
@@ -85,7 +85,7 @@ AWS (VPC, EC2 Graviton, ALB, RDS Multi-AZ, Route 53, WAF v2, KMS, Secrets Manage
 
 <br>
 
-#### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf?raw=true)
+#### [`Enterprise Database & VM Migration to AWS (Labs Report)`](./aws_labs/migration/Migration_oracle_aws.pdf)
 
 * **Technical execution and reporting of end-to-end enterprise workload and database migration labs:** 
 
@@ -99,7 +99,7 @@ Deliverable: Comprehensive migration runbooks, SCT database assessment reports, 
 
 <br>
 
-#### [`gitops-k8s-local-observability`](aws_labs/gitops_project/Project_GitOps.pdf?raw=true)
+#### [`gitops-k8s-local-observability`](./aws_labs/gitops_project/Project_GitOps.pdf)
 
 • **What it does**:
 
