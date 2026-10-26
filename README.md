@@ -78,10 +78,16 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 * **Stack**: AWS VPC, EC2 Auto Scaling, ALB, RDS PostgreSQL, Terraform Modules, CloudWatch.
 
 #### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf)
-* **What it does**: Technical execution and reporting of two enterprise migration labs performed during internship tenure:
-  1. *VMware vSphere VM to AWS EC2*: Virtual disk image preparation, driver injection, volume conversion, and networking realignment.
-  2. *Heterogeneous Database Migration*: Full-cycle migration of an on-premises relational database (Dockerized Oracle/MySQL) to Amazon RDS PostgreSQL using AWS SCT for schema translation and AWS DMS for initial data load and continuous replication (CDC) with zero data loss.
-* **Deliverable**: Comprehensive migration procedure, schema conversion logs, cutover checklist, and data integrity verification report.
+
+What it does: Technical execution and reporting of end-to-end enterprise workload and database migration labs:
+
+i. Lift-and-Shift Server Migration (Rehost): Executed block-level, continuous data replication of an on-premises Linux VM (VMware) to AWS EC2 using AWS Application Migration Service (AWS MGN), ensuring near-zero downtime cutover and automated driver/hypervisor conversion.
+
+ii. Homogeneous Replatform & Decoupling: Replatformed local MySQL to Amazon RDS for MySQL using AWS DMS (CDC via binary logs with SSL encryption); successfully decoupled a monolithic LAMP stack into a secured 2-Tier Cloud Architecture post-cutover.
+
+iii. Heterogeneous Database Migration: Migrated an on-premises commercial RDBMS (Dockerized Oracle Database 23ai) to Amazon RDS for PostgreSQL. Leveraged AWS Schema Conversion Tool (SCT) for schema assessment and automated DDL conversion (handling proprietary data types: CLOB to TEXT, NUMBER to NUMERIC, DATE to TIMESTAMP), followed by AWS DMS for full-load data ingestion with zero data loss.
+
+Deliverable: Comprehensive migration runbooks, SCT database assessment reports, cutover checklist, and post-migration data integrity verification reports via CLI/psql.
 
 #### [`gitops-k8s-local-observability`](https://github.com/votaquann/gitops-k8s-local-observability)
 * **What it does**: A localized Kubernetes platform implementing declarative GitOps synchronization and the Golden Signals observability stack. Workloads are monitored using Prometheus and visualized via custom Grafana dashboards, with Alertmanager routing threshold-based notifications for high CPU/RAM utilization and service degradation.
