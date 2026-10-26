@@ -73,22 +73,17 @@ I am a Cloud and Infrastructure Operations Engineer with an academic background 
 
 ---
 
-## 3. Microsoft Azure & Cloud Operations (Day-2 Ops)
+## 3. Microsoft Azure & Cloud Operations 
 
-### 3.1. Azure Core Pillars & Cloud-Ops Competencies
+### 3.1. Core Architectural & Operational Knowledge
 
-#### A. Core Cloud-Native Administration (AZ-104 Focus)
+#### Core Cloud-Native Administration (AZ-104 Focus)
 * **Identity & Governance**: Azure Active Directory (Microsoft Entra ID), Role-Based Access Control (RBAC) at Management Group, Subscription, and Resource Group scopes; Managed Identities (System-Assigned & User-Assigned) for secretless automation.
 * **Virtual Networking & Security**: Azure VNet architecture, Public/Private subnet partitioning, Network Security Groups (NSGs) with stateful rule definitions, Application Security Groups (ASGs).
 * **Compute & Storage Operations**: Azure Kubernetes Service (AKS) lifecycle management, private cluster architecture, system/user node pool administration; Azure Blob Storage for cold diagnostic data and Azure File Shares (SMB/NFS) for container persistent volumes.
 * **Centralized Telemetry**: Log Analytics Workspace (LAW) provisioning and diagnostic settings collection across VMs, AKS clusters, Azure SQL, and networking components.
 
-#### B. Day-2 Cloud Operations & SRE Practices
-* **KQL (Kusto Query Language) Log Analytics**: Writing high-performance queries using `where`, `summarize`, `project`, `extend`, and `join` across `ContainerLogV2`, `KubeEvents`, `KubePodInventory`, and `AppExceptions` tables to pinpoint incident root causes.
-* **Event-Driven Automation**: Developing PowerShell and Python runbooks running inside Azure Automation Accounts, authenticated via Managed Identity to auto-remediate failing workloads without human credentials.
-* **Application Insights & Distributed Tracing**: SDK instrumentation, Application Map dependency tracking, API latency breakdown across cache (Redis) and database queries, and unhandled exception triage.
-* **ITSM Incident Lifecycle (ServiceNow)**: Webhook integration via Azure Logic Apps mapping Azure Monitor alerts (P1 to P4) directly to ServiceNow incident records.
-* **Kubernetes Production Troubleshooting**: Real-time diagnostic procedures to resolve `OOMKilled`, `CrashLoopBackOff`, and `ImagePullBackOff` conditions using `kubectl` paired with Log Analytics event correlation.
+
 
 ---
 
