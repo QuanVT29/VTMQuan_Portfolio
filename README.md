@@ -95,3 +95,36 @@ I am a Cloud and Infrastructure Operations Engineer with an academic background 
 ### 3.2. Flagship Project: Cloud-Native Observability & Auto-Remediation System
 
 #### [`azure-observability-auto-remediation`](https://github.com/votaquann/azure-observability-auto-remediation)
+
+
+
+
+
+
+
+
+
+
+
+---
+
+### 3.3. Technical Runbooks & Lab Reports
+
+The following technical documents and operational runbooks are maintained within this repository for direct review:
+
+| Document Title | Scope & Purpose | Direct Link |
+| :--- | :--- | :--- |
+| **Azure Auto-Remediation Architecture Guide** | Detailed architecture specifications, Terraform state mapping, and Logic App webhook JSON payloads. | [`View PDF ↗`](./03-azure-cloudops/docs/azure-observability-remediation-report.pdf) |
+| **KQL Production Incident Playbook** | Curated collection of KQL queries for triaging Kubernetes crashes, database slow queries, and HTTP 5xx spikes. | [`View PDF ↗`](./03-azure-cloudops/docs/kql-rca-playbook.pdf) |
+| **Enterprise Cloud Migration Report** | Detailed documentation of VM and database migrations from local hypervisors to AWS infrastructure. | [`View PDF ↗`](./02-aws-devsecops/docs/enterprise-migration-labs-report.pdf) |
+| **AZ-104 Core Architecture Reference** | Consolidated study and implementation guide for Azure RBAC, VNet/NSG, AKS Storage, and Monitoring. | [`View PDF ↗`](./03-azure-cloudops/docs/az104-core-foundations.pdf) |
+
+---
+
+<div align="center">
+
+**Portfolio Maintained by Võ Tá Minh Quân**  
+*Cloud Operations & Infrastructure Engineer • Information Assurance Specialist*  
+*Da Nang City, Vietnam*
+
+</div>
