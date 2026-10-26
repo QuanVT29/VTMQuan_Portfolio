@@ -78,6 +78,8 @@ A production-grade DevSecOps pipeline deploying a full-stack containerized web a
 • **Stack**:
 
 AWS (EKS, VPC, ALB, ECR), Terraform, Kubernetes, Docker, GitHub Actions, Checkov, SonarQube, Trivy, Prometheus, Grafana, MongoDB Atlas.
+
+
 <br>
 
 #### [`aws-enterprise-3tier-platform`](https://github.com/QuanVT29/aws-enterprise-3tier-platform.git)
