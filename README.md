@@ -70,8 +70,14 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 ### 2.2. Production Projects & Migration Labs
 
 #### [`aws-eks-devsecops-todo-app`](https://github.com/QuanVT29/aws-eks-devsecops-todo-app.git)
-* **What it does**: A production-grade DevSecOps pipeline deploying a containerized microservice onto a managed Amazon EKS cluster. The platform integrates shift-left security directly into GitHub Actions, automatically halting builds upon detecting High/Critical vulnerabilities via Trivy (container scans) or Checkov (Terraform static code analysis). Deployment is managed via custom Helm charts ensuring rolling updates, zero downtime, and zero plain-text secrets in the repository.
-* **Stack**: Amazon EKS, Terraform, Helm, Docker, GitHub Actions, Trivy, Checkov.
+
+• **What it does**:
+
+A production-grade DevSecOps pipeline deploying a full-stack containerized web application onto a multi-AZ AWS EKS cluster. The platform integrates automated shift-left security gates directly into GitHub Actions—halting builds on High/Critical vulnerabilities via Checkov (IaC), SonarQube (SAST), and Trivy (container scans). Features automated L7 traffic routing via AWS ALB, HPA auto-scaling, zero plain-text secrets, and continuous full-stack observability powered by Prometheus & Grafana.
+
+• **Stack**:
+
+AWS (EKS, VPC, ALB, ECR), Terraform, Kubernetes, Docker, GitHub Actions, Checkov, SonarQube, Trivy, Prometheus, Grafana, MongoDB Atlas.
 <br>
 
 #### [`aws-enterprise-3tier-platform`](https://github.com/QuanVT29/aws-enterprise-3tier-platform.git)
