@@ -36,9 +36,7 @@ I am an **Information Assurance undergraduate at FPT University** and a certifie
 Bridging a strong foundation in network security, Linux systems hardening, and cloud engineering, my hands-on experience focuses on architecting multi-cloud environments (AWS & Azure) via **Terraform**, orchestrating microservices on **Kubernetes (EKS & AKS)**, and building closed-loop observability and automated incident remediation workflows.
 
 - **Education:** Bachelor of Information Assurance, FPT University (Da Nang) | **GPA: 3.5 / 4.0** (Expected: Jan 2028)
-  
 - **Language Proficiency:** English — Full Professional Proficiency (**IELTS 7.0 level**)
-  
 - **Core Competencies:** Multi-Cloud Infrastructure (AWS & Azure), Infrastructure as Code (Terraform), Kubernetes & Container Security (AKS/EKS), Observability & KQL Log Analytics, Linux System Hardening, and ITSM Runbook Automation (ServiceNow/Logic Apps).
 
 ### Verified Credentials & Certifications
