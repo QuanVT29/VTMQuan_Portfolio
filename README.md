@@ -73,6 +73,9 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 * **What it does**: A production-grade DevSecOps pipeline deploying a containerized microservice onto a managed Amazon EKS cluster. The platform integrates shift-left security directly into GitHub Actions, automatically halting builds upon detecting High/Critical vulnerabilities via Trivy (container scans) or Checkov (Terraform static code analysis). Deployment is managed via custom Helm charts ensuring rolling updates, zero downtime, and zero plain-text secrets in the repository.
 * **Stack**: Amazon EKS, Terraform, Helm, Docker, GitHub Actions, Trivy, Checkov.
 
+<br>
+
+
 #### [`aws-enterprise-3tier-platform`](https://github.com/votaquann/aws-enterprise-3tier-platform)
 * **What it does**:
 
@@ -81,6 +84,10 @@ An enterprise-grade, highly resilient 3-tier AWS platform codified 100% via modu
 * **Stack**:
 
 AWS (VPC, EC2 Graviton, ALB, RDS Multi-AZ, Route 53, WAF v2, KMS, Secrets Manager, CloudWatch, Synthetics, CodeDeploy), Terraform, GitHub Actions (OIDC), Checkov, Trivy, Bash, PostgreSQL.
+
+
+<br>
+
 
 #### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf)
 
@@ -93,6 +100,10 @@ ii. Homogeneous Replatform & Decoupling: Replatformed local MySQL to Amazon RDS 
 iii. Heterogeneous Database Migration: Migrated an on-premises commercial RDBMS (Dockerized Oracle Database 23ai) to Amazon RDS for PostgreSQL. Leveraged AWS Schema Conversion Tool (SCT) for schema assessment and automated DDL conversion (handling proprietary data types: CLOB to TEXT, NUMBER to NUMERIC, DATE to TIMESTAMP), followed by AWS DMS for full-load data ingestion with zero data loss.
 
 Deliverable: Comprehensive migration runbooks, SCT database assessment reports, cutover checklist, and post-migration data integrity verification reports via CLI/psql.
+
+
+<br>
+
 
 #### [`gitops-k8s-local-observability`](aws_labs/gitops_project/Project_GitOps.pdf)
 
