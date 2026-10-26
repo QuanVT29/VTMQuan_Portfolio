@@ -91,8 +91,14 @@ Deliverable: Comprehensive migration runbooks, SCT database assessment reports, 
 
 #### [`gitops-k8s-local-observability`](aws_labs/gitops_project/Project_GitOps.pdf)
 
-* **What it does**: A localized Kubernetes platform implementing declarative GitOps synchronization and the Golden Signals observability stack. Workloads are monitored using Prometheus and visualized via custom Grafana dashboards, with Alertmanager routing threshold-based notifications for high CPU/RAM utilization and service degradation.
-* **Stack**: Kubernetes, GitOps Engine, Helm, Prometheus, Grafana, Alertmanager.
+• **What it does**:
+
+An end-to-end, localized Cloud-Native DevSecOps and GitOps platform running on Kubernetes (k3d/WSL2). It automates the full software delivery lifecycle: self-hosted code management and automated CI builds with rootless containerization, automated vulnerability scanning (Shift-Left security), and dual-repository declarative GitOps deployments across multi-environment namespaces (Staging/Production). The platform integrates a 3-tier Observability stack collecting Prometheus metrics across CI pipelines, GitOps synchronization drift, and application Golden Signals, visualized via custom Grafana dashboards.
+
+• **Stack:**
+
+Kubernetes (k3d/K3s), Gitea, Tekton Pipelines, Tekton Triggers, Kaniko, Trivy, Harbor OCI Registry, Argo CD, Kustomize, Helm, Prometheus, Grafana.
+
 
 ---
 
