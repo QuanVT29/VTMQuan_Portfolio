@@ -21,7 +21,7 @@
 2. [Amazon Web Services (AWS) & DevSecOps Platform](#2-amazon-web-services-aws--devsecops-platform)
    - [Core Technical Knowledge](#21-core-aws--devsecops-competencies)
    - [Production Projects & Workload Migration Labs](#22-production-projects--migration-labs)
-3. [Microsoft Azure & Cloud Operations (Day-2 Ops)](#3-microsoft-azure--cloud-operations-day-2-ops)
+3. [Microsoft Azure & Cloud Operations ](#3-microsoft-azure--cloud-operations-day-2-ops)
    - [Core Architectural & Operational Knowledge](#31-azure-core-pillars--cloud-ops-competencies)
    - [Flagship Project: Cloud-Native Observability & Auto-Remediation System](#32-flagship-project-cloud-native-observability--auto-remediation-system)
    - [Technical Runbooks & Lab Reports](#33-technical-runbooks--lab-reports)
