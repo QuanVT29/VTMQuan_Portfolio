@@ -39,6 +39,10 @@ I am a Cloud and Infrastructure Operations Engineer with an academic background 
 
 ---
 
+
+<br>
+
+
 ## 2. Amazon Web Services (AWS) & DevSecOps Platform
 
 ### 2.1. Core AWS & DevSecOps Competencies
@@ -72,6 +76,11 @@ I am a Cloud and Infrastructure Operations Engineer with an academic background 
 * **Stack**: Kubernetes, GitOps Engine, Helm, Prometheus, Grafana, Alertmanager.
 
 ---
+
+<br>
+
+
+
 
 ## 3. Microsoft Azure & Cloud Operations 
 
@@ -118,8 +127,10 @@ The following technical documents and operational runbooks are maintained within
 
 <div align="center">
 
+<br>
+
 **Portfolio Maintained by Võ Tá Minh Quân**  
-*Cloud Operations & Infrastructure Engineer • Information Assurance Specialist*  
+*Cloud Operations & Devops Engineer • Information Assurance*  
 *Da Nang City, Vietnam*
 
 </div>
