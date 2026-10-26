@@ -30,12 +30,25 @@
 
 ## 1. Introduction & Verified Credentials
 
-I am a Cloud and Infrastructure Operations Engineer with an academic background in Information Assurance. My technical foundation spans multi-cloud architecture (AWS & Azure), container orchestration (Kubernetes), Infrastructure as Code (Terraform), and enterprise Day-2 operations—focusing on closed-loop observability, runbook automation, and root-cause troubleshooting.
+## 1. Introduction & Verified Credentials
 
-### Verified Credentials
-* **[AWS Certified Solutions Architect – Associate (SAA-C03)](https://www.credly.com/)**: Certified verification of enterprise cloud architecture design, multi-tier network isolation, high availability, and secure workload operations.
-* **Microsoft Certified: Azure Fundamentals (AZ-900) & AZ-104 Focus Track**: In-depth specialization covering Azure identity governance, software-defined networking, AKS orchestration, and Log Analytics.
-* **Formal Education**: Undergraduate in Information Assurance, Đại học FPT Đà Nẵng.
+I am an **Information Assurance undergraduate at FPT University (GPA: 3.5/4.0)** and a certified **AWS Solutions Architect (SAA-C03)** specializing in **Cloud Infrastructure, DevSecOps, and Day-2 Cloud Operations**.
+
+Bridging a strong foundation in network security, Linux systems hardening, and cloud engineering, my hands-on experience focuses on architecting multi-cloud environments (AWS & Azure) via **Terraform**, orchestrating microservices on **Kubernetes (EKS & AKS)**, and building closed-loop observability and automated incident remediation workflows.
+
+* **Education:** Bachelor of Information Assurance, FPT University (Da Nang) | **GPA: 3.5 / 4.0** (Expected: Jan 2028)
+* **Language Proficiency:** English — Full Professional Proficiency (**IELTS 7.0 level**)
+* **Core Competencies:** Multi-Cloud Infrastructure (AWS & Azure), Infrastructure as Code (Terraform), DevSecOps CI/CD Pipelines, Container Security, Linux Administration, and ITSM Runbook Automation.
+
+### Verified Credentials & Certifications
+
+| Credential / Certification | Issuing Organization | Scope / Verification |
+| :--- | :--- | :--- |
+| **AWS Certified Solutions Architect – Associate (SAA-C03)** | Amazon Web Services | [Verify via Credly ↗](https://www.credly.com/) |
+| **Foundations of Cybersecurity** | Google | Information Security Principles, Threat Assessment |
+| **Introduction to Networks** | Cisco Networking Academy | Routing, VLANs, Subnetting, TCP/IP Layer Diagnostics |
+| **GenAI in Cloud** | FPT Software | Cloud AI Integration & Productivity Automation |
+| **Microsoft Azure (AZ-900 & AZ-104 Focus Track)** | Microsoft Learning | RBAC, VNet/NSG, AKS Operations, Log Analytics & KQL |
 
 ---
 
