@@ -89,7 +89,7 @@ AWS (VPC, EC2 Graviton, ALB, RDS Multi-AZ, Route 53, WAF v2, KMS, Secrets Manage
 <br>
 
 
-#### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf)
+#### [`Enterprise Database & VM Migration to AWS (Labs Report)`](aws_labs/migration/Migration_oracle_aws.pdf?raw=true)
 
 * **Technical execution and reporting of end-to-end enterprise workload and database migration labs:** 
 
@@ -105,7 +105,7 @@ Deliverable: Comprehensive migration runbooks, SCT database assessment reports, 
 <br>
 
 
-#### [`gitops-k8s-local-observability`](aws_labs/gitops_project/Project_GitOps.pdf)
+#### [`gitops-k8s-local-observability`](aws_labs/gitops_project/Project_GitOps.pdf?raw=true)
 
 • **What it does**:
 
