@@ -30,7 +30,6 @@
 
 ## 1. Introduction & Verified Credentials
 
-## 1. Introduction & Verified Credentials
 
 I am an **Information Assurance undergraduate at FPT University** and a certified AWS Solutions Architect (SAA-C03) specializing in **Cloud Infrastructure, DevSecOps, and Day-2 Cloud Operations**.
 
