@@ -58,14 +58,18 @@ Bridging a strong foundation in network security, Linux systems hardening, and c
 ## 2. Amazon Web Services (AWS) & DevSecOps Platform
 
 ### 2.1. Core AWS & DevSecOps Competencies
-* **Compute & Container Platforms**: Amazon EKS, EC2, Auto Scaling Groups (ASG), AWS Lambda.
-* **Software-Defined Networking & Security**: Multi-AZ VPC architecture, Public/Private Subnets, Internet/NAT Gateways, Application Load Balancers (ALB), Route 53, IAM Roles for Service Accounts (IRSA), Security Groups, and NACLs.
-* **Data Layer & Storage**: Amazon RDS (PostgreSQL/MySQL), Amazon S3, Elastic Block Store (EBS), Elastic File System (EFS).
-* **Infrastructure as Code (IaC) & Automation**: Modular Terraform architectures with remote state management and locking.
-* **DevSecOps & Shift-Left Security**: Automated CI/CD pipelines via GitHub Actions, container image vulnerability scanning using Trivy, and IaC misconfiguration audits using Checkov.
-* **Cloud Migration Disciplines**: Workload assessment, heterogeneous database schema conversion, and minimal-downtime replication via AWS Database Migration Service (DMS) and AWS Schema Conversion Tool (SCT).
+* **Compute & Container Platforms**: Amazon EKS, EC2 (ARM64 Graviton), Auto Scaling Groups (ASG), AWS Lambda.
+* **Enterprise Networking & Edge Security**: Multi-AZ VPC design, Public/Private subnets, Route 53 (DNS Failover / Latency Routing), Application Load Balancers (ALB), AWS WAF v2.
+* **Identity, Secrets & Encryption**: IAM Roles for Service Accounts (IRSA), GitHub Actions OIDC federation, AWS Secrets Manager (auto-rotation), AWS KMS (CMK envelope encryption).
+* **Data Persistence & Storage**: Amazon RDS (Multi-AZ PostgreSQL/MySQL), Amazon S3, Elastic Block Store (EBS), Elastic File System (EFS).
+* **Infrastructure as Code (IaC) & Automation**: Modular Terraform architecture, remote state management with S3 backend and DynamoDB state locking.
+* **Shift-Left DevSecOps & CI/CD**: Automated CI/CD pipelines via GitHub Actions and Tekton, SAST scanning (SonarQube), container image vulnerability auditing (Trivy), and IaC policy-as-code enforcement (Checkov).
+* **Cloud Migration & Disaster Recovery**: Multi-Region Active-Passive DR strategies (RTO/RPO validation); server rehosting via AWS Application Migration Service (MGN); homogeneous and heterogeneous database migration using AWS Database Migration Service (DMS) and AWS Schema Conversion Tool (SCT).
 
 ---
+
+<br>
+
 
 ### 2.2. Production Projects & Migration Labs
 
@@ -180,6 +184,9 @@ Kubernetes (k3d/K3s), Gitea, Tekton Pipelines, Tekton Triggers, Kaniko, Trivy, H
 
 
 ---
+
+<br>
+
 
 ### 3.3. Technical Runbooks & Documentation
 
