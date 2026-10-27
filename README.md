@@ -130,11 +130,32 @@ Kubernetes (k3d/K3s), Gitea, Tekton Pipelines, Tekton Triggers, Kaniko, Trivy, H
 
 ### 3.1. Core Architectural & Operational Knowledge
 
-#### Core Cloud-Native Administration (AZ-104 Focus)
-* **Identity & Governance**: Azure Active Directory (Microsoft Entra ID), Role-Based Access Control (RBAC) at Management Group, Subscription, and Resource Group scopes; Managed Identities (System-Assigned & User-Assigned) for secretless automation.
-* **Virtual Networking & Security**: Azure VNet architecture, Public/Private subnet partitioning, Network Security Groups (NSGs) with stateful rule definitions, Application Security Groups (ASGs).
-* **Compute & Storage Operations**: Azure Kubernetes Service (AKS) lifecycle management, private cluster architecture, system/user node pool administration; Azure Blob Storage for cold diagnostic data and Azure File Shares (SMB/NFS) for container persistent volumes.
-* **Centralized Telemetry**: Log Analytics Workspace (LAW) provisioning and diagnostic settings collection across VMs, AKS clusters, Azure SQL, and networking components.
+#### Module 1: Governance, Zero-Trust Identity & Cost Guardrails
+* **Hierarchy & RBAC:** Enforced 4-tier scoping (`Management Group` $\rightarrow$ `Subscription` $\rightarrow$ `Resource Group` $\rightarrow$ `Resource`) with least-privilege roles (`Contributor`, `Reader`, `Monitoring Contributor`).
+* **Secretless Identities:** Implemented User-Assigned Managed Identity and **AKS Workload Identity** for direct ARM API interaction without credentials.
+* **Governance & Budget:** Applied Azure Policies restricting region deployment (`Southeast Asia`) and compute SKUs; enforced automated $5 email budget alerts.
+
+#### Module 2: Secure Core Networking & Zero-Public PaaS
+* **VNet Architecture:** Segmented CIDR `10.0.0.0/16` into `snet-aks` (`10.0.1.0/24`), `snet-data` (`10.0.2.0/24`), and `snet-mgmt` (`10.0.3.0/24`).
+* **L4 Micro-segmentation:** Enforced NSG `DenyAllInbound` with strict IP-whitelisted SSH to a Jumpbox hardened via Application Security Groups (`asg-jumpbox`).
+* **Private PaaS:** Configured Private Endpoints and Private DNS Zones for Storage and Azure SQL, isolating traffic strictly within private IPs (`10.0.2.x`).
+
+#### Module 3: Storage, Secrets & Secretless Workloads
+* **Storage Security:** Disabled public access; enforced lifecycle tiering (Hot $\rightarrow$ Cool after 7d $\rightarrow$ Archive after 30d) and time/IP-restricted SAS tokens.
+* **Key Vault Hardening:** Enforced Azure RBAC authorization with `Soft-delete` and `Purge Protection`.
+* **Secretless AKS:** Deployed Azure Key Vault Secrets Store CSI Driver (`SecretProviderClass`) to mount DB credentials directly into pods without hardcoded secrets.
+
+#### Module 4: Container Platform & Stateful Workloads (AKS + Cache + DB)
+* **AKS Cluster Operations:** Provisioned System (`Standard_B2s`) and User Node Pools; secured API Server via Authorized IP Ranges; integrated ACR via `AcrPull` Managed Identity.
+* **Stateful Data Tier:** Provisioned **Azure Cache for Redis** (Basic C0) and **Azure SQL Database** (Serverless, Auto-Pause enabled).
+* **3-Tier Deployment:** Packaged and deployed a microservice stack orchestrating full communication: `App` $\leftrightarrow$ `Redis Cache` $\leftrightarrow$ `Azure SQL`.
+
+#### Module 5: Observability, Runbook Automation & ITSM Operations
+* **Centralized LAW & KQL:** Streamed `KubeEvents`, `ContainerLogV2`, and `AppRequests` to Log Analytics (30-day retention); executed KQL queries isolating `OOMKilled`, `CrashLoopBackOff`, and HTTP 5xx spikes.
+* **Application Insights & Tracing:** Mapped live dependency topology via Application Map to detect SQL/Redis latency bottlenecks and unhandled exceptions.
+* **Severity Alerting (P1–P4):** Configured alert rules for HTTP 5xx > 10% (P1), DB latency > 2s (P2), and node resource saturation > 85% (P3).
+* **Auto-Remediation (Runbooks):** Authored PowerShell Runbooks authenticated via Managed Identity to auto-restart failing pods upon receiving P1 alerts (MTTR < 60s).
+* **ITSM Integration (ServiceNow via Logic Apps):** Built event-driven Logic Apps to parse Azure Monitor webhooks, auto-creating and resolving incident tickets in ServiceNow with KQL RCA data.
 
 
 
