@@ -115,6 +115,9 @@ Azure **Managed Identities** solve this by provisioning automatically managed cr
 <br>
 
 
+
+## 5. Governance Guardrails: Azure Policy & FinOps
+
 ### 5.1. Azure Policy vs. RBAC
 
 * **Azure RBAC** controls **user actions** (e.g., "Can Alex deploy a virtual machine?").
