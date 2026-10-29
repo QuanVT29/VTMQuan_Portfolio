@@ -44,12 +44,24 @@ Enterprise security requires a strict separation of concerns between identity ve
 
 ![](./images/entraid_rbac.png)
 
-+------------------------------------+       +------------------------------------+
-|         Microsoft Entra ID         |       |       Azure Resource Manager       |
-|    Authentication Engine (AuthN)   | ----> |     Authorization Engine (AuthZ)   |
-|                                    |       |                                    |
-|   "Verify WHO the identity is"     |       | "Determine WHAT actions are allowed|
-|  (User, Group, Service Principal)  |       |  at WHICH specific scope"          |
-+------------------------------------+       +------------------------------------+
+### 3.1. Anatomy of an Azure RBAC Role Assignment
+A role assignment is an immutable tuple consisting of three distinct entities:
+
+$$\text{Role Assignment} = \text{Security Principal} + \text{Role Definition} + \text{Scope}$$
+
+1. **Security Principal:** Who gets the access (`User`, `Security Group`, `Service Principal`, or `Managed Identity`).
+2. **Role Definition:** A collection of permissions (`Actions` and `NotActions`).
+   * `Owner`: Full access to manage all resources + ability to delegate access to others.
+   * `Contributor`: Full access to create and manage resources; cannot grant access to others.
+   * `Reader`: View-only access across resources; cannot inspect secrets or connection strings.
+   * `Monitoring Contributor`: Cloud-Ops specific role to manage alerts, read logs, and configure diagnostic settings.
+   * `Key Vault Secrets User`: Data plane role allowing workload identities to read secrets.
+3. **Scope:** The precise boundary where the role applies (`Management Group` $\rightarrow$ `Subscription` $\rightarrow$ `Resource Group` $\rightarrow$ `Resource`).
+
+### 3.2. Scope Inheritance Rule
+* Permissions defined at parent scopes are **strictly inherited** by all child scopes.
+* **Least Privilege Best Practice:** Never assign broad `Contributor` or `Owner` roles at the Subscription level. Grant access strictly at the **Resource Group** level or to specific functional resources.
+
+---
 
 
