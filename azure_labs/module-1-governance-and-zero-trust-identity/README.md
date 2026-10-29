@@ -65,3 +65,39 @@ $$\text{Role Assignment} = \text{Security Principal} + \text{Role Definition} + 
 ---
 
 
+<br>
+
+
+## 4. Secretless Workload Architecture with Managed Identities
+
+Hardcoding service credentials, client secrets, or connection strings in application manifests introduces critical security vulnerabilities and operational overhead (secret leakage, certificate expiration outages). 
+
+Azure **Managed Identities** solve this by provisioning automatically managed credentials directly within Microsoft Entra ID.
+
+```
++-------------------------------------------------------------+
+| Virtual Machine / Container Workload                        |
+|                                                             |
+|   [ Application / Daemon ]                                  |
+|              │                                              |
+|              │ (1) HTTP GET /token                          |
+|              ▼                                              |
+|   [ Azure Instance Metadata Service (IMDS) ]                |
+|     169.254.169.254                                         |
++--------------┬----------------------------------------------+
+│
+│ (2) Internal Token Request
+▼
++-------------------------------------------------------------+
+| Microsoft Entra ID                                          |
+| (Validates resource identity & returns short-lived JWT)    |
++--------------┬----------------------------------------------+
+│
+│ (3) Present Bearer Token (Secretless)
+▼
++-------------------------------------------------------------+
+| Target Resource: Azure Key Vault / Azure SQL Database       |
++-------------------------------------------------------------+
+```
+
+
