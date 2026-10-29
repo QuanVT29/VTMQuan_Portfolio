@@ -101,3 +101,62 @@ Azure **Managed Identities** solve this by provisioning automatically managed cr
 ```
 
 
+### 4.1. Comparison: System-Assigned vs. User-Assigned
+
+| Feature | System-Assigned Managed Identity | User-Assigned Managed Identity |
+| :--- | :--- | :--- |
+| **Lifecycle** | Tied directly to the host resource. Automatically purged when resource is deleted. | Independent lifecycle. Created as a standalone Azure resource. |
+| **Cardinality** | 1:1 mapping (One resource can have only one system identity). | 1:N or N:M mapping (Can be assigned to multiple VMs, AKS pools, Runbooks). |
+| **Cloud-Ops Use Case** | Ephemeral, isolated workloads (e.g., single diagnostic Jumpbox). | **Production Standard:** Shared identity assigned to auto-scaled workload pools and automation runbooks. |
+
+---
+
+
+<br>
+
+
+### 5.1. Azure Policy vs. RBAC
+
+* **Azure RBAC** controls **user actions** (e.g., "Can Alex deploy a virtual machine?").
+* **Azure Policy** controls **resource properties** (e.g., "Can any VM be provisioned outside `Southeast Asia`?" or "Is disk encryption enforced on all storage accounts?").
+
+Policy Evaluation Pipeline:
+Resource Request (ARM) ──► RBAC Check (Passed) ──► Policy Evaluation (Passed/Denied) ──► Resource Deployed
+
+
+#### Primary Policy Effects
+* `Deny`: Rejects the resource creation or modification request before execution.
+* `Audit`: Permits resource creation but flags it as non-compliant in compliance dashboards.
+* `Modify`: Automatically injects required tags or settings during provisioning.
+* `DeployIfNotExists`: Automatically deploys pre-requisite configurations (e.g., auto-enrolling a newly created VM into a Log Analytics Workspace).
+
+
+### 5.2. Financial Guardrails (FinOps)
+To protect cloud credits and prevent run-away billing anomalies:
+1. **Azure Policy Quota Gates:** Enforce restrictions on costly SKUs (e.g., blocking GPU-enabled or mega-tier VM series like `Standard_M*` or unmanaged disk types).
+2. **Subscription Budgets:** Define static thresholds with tiered notifications:
+   * **At 50% ($2.50 spent):** Operational awareness alert sent to the engineering channel.
+   * **At 80% ($4.00 spent):** High-priority alert sent to verify potential resource leaks.
+   * **At 100% ($5.00 spent):** Automated webhook triggers Action Groups to freeze or deallocate non-critical compute infrastructure.
+
+---
+
+
+<br>
+
+
+## 6. AWS vs. Azure Mental Model Mapping
+
+For engineers transitioning from an AWS background:
+
+| AWS Concept | Azure Equivalent | Key Operational Architectural Differences |
+| :--- | :--- | :--- |
+| **AWS Organization & OU** | **Management Groups** | Structurally identical; used to enforce compliance and aggregate policies. |
+| **AWS Account** | **Azure Subscription** | Azure subscriptions act as billing partitions under a shared central Entra ID Tenant. |
+| **Resource Tagging / Optional RG** | **Resource Group (Mandatory)** | In Azure, resource groups are mandatory boundary primitives; they govern lifecycle and cascaded cleanup. |
+| **AWS IAM** | **Microsoft Entra ID + Azure RBAC** | Azure decouples identity directory (Entra ID) from cloud infrastructure authorization (ARM RBAC). |
+| **IAM Role / Instance Profile** | **Managed Identity** | Azure eliminates Instance Profiles; Managed Identities inject tokens natively via internal IMDS. |
+| **Service Control Policies (SCPs)** | **Azure Policy** | Azure Policy is significantly more granular than SCPs, supporting automated remediation (`DeployIfNotExists`). |
+| **AWS Budgets** | **Azure Cost Management Budgets** | Functionally equivalent; emits alerts and triggers automated Webhooks / Action Groups. |
+
+---
