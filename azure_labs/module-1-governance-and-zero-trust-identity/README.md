@@ -8,6 +8,9 @@ This module lays the operational foundation for the entire platform, adhering to
 
 ---
 
+<br>
+
+
 ## 2. Azure Management Hierarchy
 
 Azure enforces a strict 4-level hierarchical governance model. Every resource deployed to the platform inherits access controls, compliance rules, and audit configurations from the levels above it.
@@ -29,6 +32,10 @@ Azure enforces a strict 4-level hierarchical governance model. Every resource de
 > **Operational Insight:** Unlike AWS, where resources reside directly inside an Account, Azure **strictly requires** every single resource to reside within exactly one Resource Group. Deleting a Resource Group triggers a cascading, atomic deletion of all encapsulated resources—preventing orphaned infrastructure and lingering costs.
 
 ---
+
+
+
+<br>
 
 
 ## 3. Identity vs. Access Management: AuthN vs. AuthZ
