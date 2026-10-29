@@ -12,7 +12,7 @@ This module lays the operational foundation for the entire platform, adhering to
 
 Azure enforces a strict 4-level hierarchical governance model. Every resource deployed to the platform inherits access controls, compliance rules, and audit configurations from the levels above it.
 
-![](images/Management_Hierarch.png)
+![](module-1-governance-and-zero-trust-identity/images/Management_Hierarchy.png)
 
 
 
