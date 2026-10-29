@@ -43,3 +43,13 @@ Azure enforces a strict 4-level hierarchical governance model. Every resource de
 Enterprise security requires a strict separation of concerns between identity verification and access permissions:
 
 ![](./images/entraid_rbac.png)
+
++------------------------------------+       +------------------------------------+
+|         Microsoft Entra ID         |       |       Azure Resource Manager       |
+|    Authentication Engine (AuthN)   | ----> |     Authorization Engine (AuthZ)   |
+|                                    |       |                                    |
+|   "Verify WHO the identity is"     |       | "Determine WHAT actions are allowed|
+|  (User, Group, Service Principal)  |       |  at WHICH specific scope"          |
++------------------------------------+       +------------------------------------+
+
+
