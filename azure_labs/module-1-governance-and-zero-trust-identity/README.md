@@ -34,3 +34,5 @@ Azure enforces a strict 4-level hierarchical governance model. Every resource de
 ## 3. Identity vs. Access Management: AuthN vs. AuthZ
 
 Enterprise security requires a strict separation of concerns between identity verification and access permissions:
+
+![](./images/entraid_rbac.png)
