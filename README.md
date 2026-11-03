@@ -194,3 +194,19 @@ The following technical documents and architecture references are maintained wit
 *Da Nang City, Vietnam*
 
 </div>
+
+
+
+
+| Session | Topic | Core Services | Key Focus |
+|:---:|---|---|---|
+| 1 | Cloud Fundamentals & Environment Setup | AWS Global Infra, Budgets | Cloud service models, Free Tier setup, root MFA, Budget billing alerts, AWS CLI & Terraform installation. |
+| 2 | Security, Identity & Secrets Management | IAM, KMS, SSM Parameter Store | User/Role access management, least privilege policies, KMS data encryption, secret storage with SSM. |
+| 3 | Core Networking & DNS | VPC, Subnets, IGW, NAT GW, Route 53 | Multi-AZ VPC design, Public/Private subnets, Route Tables, NAT Gateway routing, Security Groups & NACLs. |
+| 4 | Compute & Block/File Storage | EC2, EBS, EFS | Automated EC2 provisioning via User Data, EBS volume attaching/formatting, Multi-AZ file sharing with EFS. |
+| 5 | Object Storage & Content Delivery | S3, CloudFront | S3 bucket management (Lifecycle, Versioning), CloudFront CDN acceleration, and origin protection via OAC. |
+| 6 | Relational/NoSQL Databases & Caching | RDS, DynamoDB, ElastiCache | Multi-AZ RDS in isolated private subnets, NoSQL tables with DynamoDB, performance caching via Redis. |
+| 7 | High Availability & Elasticity | ALB, Auto Scaling Group (ASG) | Traffic distribution via ALB, dynamic ASG target tracking policies, failover, and self-healing validation. |
+| 8 | Serverless & Asynchronous Messaging | Lambda, SQS, SNS, EventBridge | Event-driven architecture: asynchronous queueing via SQS, compute execution with Lambda, pub/sub alerts with SNS. |
+| 9 | Observability & IaC Standardization | CloudWatch, CloudTrail, Terraform State | CloudWatch metrics & alarms, CloudTrail audit trails, Terraform remote state backend (S3 + DynamoDB lock). |
+| 10 | Capstone Project | Full stack integration (Sessions 1–9) | 100% Terraform provisioning of an end-to-end production-grade 3-Tier Web Architecture, validation & cleanup. |
