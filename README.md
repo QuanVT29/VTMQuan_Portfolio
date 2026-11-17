@@ -174,17 +174,6 @@ Kubernetes (k3d/K3s), Gitea, Tekton Pipelines, Tekton Triggers, Kaniko, Trivy, H
 <br>
 
 
-### 3.3. Technical Runbooks & Documentation
-
-The following technical documents and architecture references are maintained within this repository for direct review:
-
-| Document Title | Scope & Purpose | Direct Link |
-| :--- | :--- | :--- |
-| **Azure Auto-Remediation System Report** | End-to-end architecture design, Terraform manifests, Logic App webhook payloads, and operational KQL incident runbooks. | [`View PDF ↗`](./azure_labs/docs/Azure-Auto-Remediation-Report.pdf) |
-| **AZ-104 Core Cloud-Native Reference** | Consolidated technical notes and hands-on guide covering Identity (RBAC/Managed ID), VNet/NSG, AKS Storage, and LAW. | [`View PDF ↗`](./azure_labs/docs/AZ104-Core-Foundations.pdf) |
-
----
-
 <div align="center">
 
 <br>
