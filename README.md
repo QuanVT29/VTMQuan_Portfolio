@@ -172,6 +172,7 @@ Kubernetes (k3d/K3s), Gitea, Tekton Pipelines, Tekton Triggers, Kaniko, Trivy, H
   - **Shift-Left DevSecOps & NOC Readiness:** Enforced IaC static security scanning (`TFLint`, `Checkov`) and authored production-grade L1/L2 KQL Diagnostic Playbooks, Runbook SOPs, and Root Cause Analysis (RCA) post-mortem documentation.
 
 - **Stack:**
+
   Azure (AKS, VNet, NSG, Private Endpoints, Private DNS, Azure SQL, Key Vault, Log Analytics, Container Insights, Application Insights, Azure Monitor, Logic Apps, Azure Automation, Managed Identity), Terraform, Kubernetes, PowerShell, KQL, Python (FastAPI), Redis, ServiceNow ITSM, TFLint, Checkov, Bash.
 
 
