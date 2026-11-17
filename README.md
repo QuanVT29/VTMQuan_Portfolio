@@ -9,7 +9,7 @@
 [![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
 [![ITSM Integration](https://img.shields.io/badge/ITSM-ServiceNow_Automation-81B5A1?style=for-the-badge&logo=servicenow&logoColor=white)](https://www.servicenow.com/)
 
-[Curriculum Vitae (PDF)](./01-credentials/docs/CV_VoTaMinhQuan_CloudOps.pdf) • [Credly Certification Badge](https://www.credly.com/badges/1db6d09f-23c5-4364-99d0-10f5469515f9/public_url) • [GitHub Repositories](https://github.com/QuanVT29)
+[Curriculum Vitae (PDF)](../docs/CV_VoTaMinhQuan_CloudOps_DevOps.pdf) • [Credly Certification Badge](https://www.credly.com/badges/1db6d09f-23c5-4364-99d0-10f5469515f9/public_url) • [GitHub Repositories](https://github.com/QuanVT29)
 
 </div>
 
