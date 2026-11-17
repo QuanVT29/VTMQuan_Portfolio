@@ -156,10 +156,22 @@ Kubernetes (k3d/K3s), Gitea, Tekton Pipelines, Tekton Triggers, Kaniko, Trivy, H
 
 ### 3.2. Flagship Project: Cloud-Native Observability & Auto-Remediation System
 
-#### [`azure-observability-auto-remediation`](https://github.com/QuanVT29/azure-cloudops-autoremediation.git)
+#### [`azure-cloudops-autoremediation`](https://github.com/QuanVT29/azure-cloudops-autoremediation.git)
 
 
+- **What it does:**
+  An enterprise-grade, zero-trust Core Banking platform on Microsoft Azure, codified 100% via modular Terraform across isolated lifecycle layers (`00-bootstrap` remote state, `01-network`, `02-security`, `03-compute-data`, `04-telemetry`, and `05-automation`). Designed around a segmented Virtual Network (`10.0.0.0/16`) with granular Network Security Groups (NSGs), Private DNS Zones, and Private Endpoints, the architecture eliminates public internet exposure for the backend Azure SQL Database while running a multi-replica FastAPI microservice and In-Cluster Redis cache on Azure Kubernetes Service (AKS). Secrets are dynamically mounted and rotated from Azure Key Vault via the Secrets Store CSI Driver under least-privilege RBAC and System-Assigned Managed Identities.
 
+  To guarantee production resilience, the platform implements full-stack observability—combining Log Analytics (`ContainerLogV2`, `KubeEvents`), Container Insights, Application Insights distributed tracing, and FinOps daily ingestion quota governance—paired with an event-driven autonomous incident response pipeline. Validated through a custom live SRE Chaos Engineering Simulator (`HTTP 500` API outages, `OOMKilled` `512Mi` memory limit breaches, and `>3.5s` SQL lock latency SLA violations), custom KQL alert rules perform severity-tiered triage (`P1/Sev1` vs. `P2/Sev2`) to prevent alert fatigue. Critical `P1` outages trigger Azure Logic Apps to automatically log structured incidents via the ServiceNow ITSM Table API while simultaneously invoking Azure Automation PowerShell Runbooks for autonomous pod self-healing.
+
+- **Key Engineering & SRE Outcomes:**
+  - **Autonomous Self-Healing (`MTTR < 60s`):** Automated `P1` API outage detection, ServiceNow ticket creation, and zero-downtime `kubectl rollout restart` execution via Managed Identity-authenticated PowerShell Runbooks without human intervention.
+  - **Zero-Downtime High Availability:** Verified sub-2-second replica traffic failover and 23-second native Kubernetes pod recovery during Linux `cgroup` `OOMKilling` events.
+  - **Intelligent Alert Triage:** Differentiated `P1` hard outages (auto-remediation + Sev1 ticket) from `P2` latency degradation (`3500ms > 2500ms` SLA, routed to Sev2 DBA/App triage without blindly restarting healthy pods).
+  - **Shift-Left DevSecOps & NOC Readiness:** Enforced IaC static security scanning (`TFLint`, `Checkov`) and authored production-grade L1/L2 KQL Diagnostic Playbooks, Runbook SOPs, and Root Cause Analysis (RCA) post-mortem documentation.
+
+- **Stack:**
+  Azure (AKS, VNet, NSG, Private Endpoints, Private DNS, Azure SQL, Key Vault, Log Analytics, Container Insights, Application Insights, Azure Monitor, Logic Apps, Azure Automation, Managed Identity), Terraform, Kubernetes, PowerShell, KQL, Python (FastAPI), Redis, ServiceNow ITSM, TFLint, Checkov, Bash.
 
 
 
